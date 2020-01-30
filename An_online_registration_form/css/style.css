@@ -1,0 +1,268 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*General Styles*/
+
+body {
+	font-size: 16px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+header {
+	text-align: center;
+}
+
+p {
+	margin-top: 15px;
+}
+
+fieldset {
+	border: none;
+}
+
+main {
+	margin-top: 3px;
+	border-top: 2px solid #FF004B;
+}
+
+input {
+	text-indent: .5em;
+}
+
+legend {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+input[type=checkbox],
+input[type=radio]{
+	margin-right: .9em;
+	
+}
+
+select {
+	text-indent: 0.5em;
+}
+
+textarea {
+	height: 150px;
+	padding: 1em 0;
+	text-indent: 1em;
+}
+
+::placeholder {
+	padding-right: 1em;
+}
+
+footer {
+	font-size: 1em;
+	font-style: italic;
+	text-align: center;
+	padding: 2em 0;
+}
+
+/*Layout Styles*/
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.title {
+	padding-top: 20px;
+	background-color: #FF004B;
+	color:#fff;
+	padding: 1em 0;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.sign_up {
+	padding: 2em 0;
+	
+}
+
+.contact {
+	border-bottom: 2px solid #FF004B;
+	padding: 1.6em 0;
+}
+
+.color {
+	background-color: ghostwhite;
+}
+
+.group {
+	padding: 0.5em;
+}
+
+.sign-up-btn {
+	background-color: #FF004B;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1em;
+	margin-top: 0.3em;
+	padding: 1em 0;
+	width: 100%;
+	text-align: center;
+}
+
+.news-label {
+	display: inline-block;
+	margin-bottom: 0.5em;
+}
+
+.newsletter legend,
+.contact legend{
+	padding-top: 1.2em;
+	color: #FF004B;
+	text-align: center;
+}
+
+.newsletter legend {
+	margin-bottom: 1.25em;
+}
+
+#zip {
+	width: 100%;
+}
+
+.sign_up h2 {
+	color: #FF004B;
+}
+
+.sign_up p {
+	color: gray;
+	margin-bottom: 1em;
+}
+
+.contact legend,
+.contact legend {
+	padding-top: 1.5em;
+}
+
+.contact input,
+.contact select,
+textarea {
+	background-color: #EFEFEF;
+	border-radius: 10px;
+	border-color: transparent;
+	display: block;
+	font-size: 0.85em;
+	width: 100%;
+	margin: 1em 0 1.5em;
+	font-style: italic;
+}
+
+.contact input,
+.contact select {
+	height: 50px;
+}
+
+.contact label {
+	color: #FF004B;
+}
+
+/*Pseudo Classes*/
+
+input:focus,
+select:focus,
+textarea:focus {
+	border: 2px solid #FF004B;
+	outline: none;
+}
+
+input:focus,
+select:focus {
+	background-color: rgba(255,238,244,1.00);
+}
+
+textarea:focus {
+	background-color: #fff;
+}
+
+
+.required-fields::placeholder {
+	text-align: right;
+	font-style: italic;
+}
+
+.news-label:not(:first-of-type) {
+	margin-top: 2em;
+}
+
+/*Attribute Selectors*/
+
+
+
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 1000px;
+	}
+	
+	.flex {
+		display: flex;
+		align-items: center;
+	}
+	
+	.flex label {
+		flex: 1;
+	}
+	
+	.flex input,
+	.flex select{
+		flex: 4;
+		
+	}
+	
+	.flex #zip {
+		flex: 1.5;
+	}
+	
+	.zip-code {
+		width: 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
